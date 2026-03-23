@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>DoradcaWiezy</RootNamespace>
+    <AssemblyName>DoradcaWiezy</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+
+    <!-- Ścieżki do gry -->
+    <Sts2Dir>G:\SteamLibrary\steamapps\common\Slay the Spire 2</Sts2Dir>
+    <Sts2DataDir>$(Sts2Dir)\data_sts2_windows_x86_64</Sts2DataDir>
+    <ModsDir>$(Sts2Dir)\mods\DoradcaWiezy</ModsDir>
+  </PropertyGroup>
+
+  <!-- Referencje do DLL gry -->
+  <ItemGroup>
+    <Reference Include="sts2">
+      <HintPath>$(Sts2DataDir)\sts2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GodotSharp">
+      <HintPath>$(Sts2DataDir)\GodotSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(Sts2DataDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MonoMod.Backports">
+      <HintPath>$(Sts2DataDir)\MonoMod.Backports.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Auto-kopiuj do folderu mods po każdym buildzie -->
+  <Target Name="CopyToMods" AfterTargets="Build">
+    <MakeDir Directories="$(ModsDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModsDir)" OverwriteReadOnlyFiles="true" />
+    <Copy SourceFiles="$(ProjectDir)DoradcaWiezy.json" DestinationFolder="$(ModsDir)" OverwriteReadOnlyFiles="true" />
+    <Message Text="[DoradcaWiezy] Skopiowano do: $(ModsDir)" Importance="high" />
+  </Target>
+
+</Project>
