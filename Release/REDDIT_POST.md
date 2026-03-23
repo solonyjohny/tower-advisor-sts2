@@ -40,7 +40,7 @@ Cześć! Zrobiłem moda pomocnika dla STS2 – **Doradca Wieży** (Tower Advisor
 2. Uruchom INSTALL.bat
 3. Settings → Mods → włącz
 
-[LINK DO POBIERANIA - wklej link z GitHuba lub Reddit]
+https://github.com/solonyjohny/tower-advisor-sts2/releases/latest
 
 ---
 
