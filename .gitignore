@@ -1,0 +1,15 @@
+## Build output
+bin/
+obj/
+
+## Visual Studio / Rider
+.vs/
+*.user
+*.suo
+.idea/
+
+## Release folder (DLL copies)
+Release/DoradcaWiezy.dll
+
+## Logs
+*.log
