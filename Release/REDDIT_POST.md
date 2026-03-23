@@ -3,11 +3,56 @@
 ---
 
 ## Tytuł posta:
-**[MOD] Doradca Wieży / Tower Advisor – combat HUD + deck/path/event advisor | PL/EN | Early Beta**
+**[MOD] Tower Advisor / Doradca Wieży – combat HUD + deck/path/event advisor | PL/EN | Early Beta**
 
 ---
 
 ## Treść (wklej na Reddit):
+
+---
+
+Hey! I made an advisor overlay mod for STS2 – **Tower Advisor** (Doradca Wieży). It's in beta, works on v0.99.x.
+
+**What it does:**
+
+⚔️ **Combat HUD** (F1 toggle)
+- Your HP/Block and all enemies' HP/Block/intent with exact damage values
+- Best card suggestion with reason and optimal play order
+- Alerts: "YOU CAN KILL THIS TURN" / "DIE WITHOUT BLOCK"
+- Detects: Slippery, Intangible, Armor (damage cap), Corruption
+- Warns about debuffs (Weak, Vulnerable, Frail, Poison)
+
+🃏 **Deck Advisor** (at card reward screen)
+- Rating ★★★/★★/★/✗ with reason for each offered card
+- Detects exhaust engine (Corruption + DarkEmbrace/FeelNoPain)
+- Current deck archetype + upgrade suggestion
+
+🗺️ **Path + Event Advisor**
+- Path analysis, route recommendation based on HP and deck state
+- Evaluates event options
+
+🌍 **Full PL/EN** – switch via F2 → settings
+
+---
+
+**Installation:**
+1. Close the game
+2. Run INSTALL.bat
+3. Settings → Mods → enable DoradcaWiezy
+
+https://github.com/solonyjohny/tower-advisor-sts2/releases/latest
+
+---
+
+**⚠️ Beta warning:** Mod is in active development. The game changes with every patch so there may be bugs. All bug reports and suggestions welcome in the comments!
+
+**Known limitations:**
+- Some enemy mechanics not yet detected (work in progress)
+- Card ratings are heuristic, not always perfect
+
+If the mod tells you to play the wrong card or you see something weird – drop a comment with the situation, I'll try to fix it!
+
+---
 
 ---
 
@@ -50,15 +95,10 @@ https://github.com/solonyjohny/tower-advisor-sts2/releases/latest
 - Niektóre mechaniki wrogów jeszcze nie wykryte (praca w toku)
 - Oceny kart są heurystyczne, nie zawsze idealne
 
-Jeśli mod kaze Ci zagrać złą kartę albo widzisz coś dziwnego – napisz w komentarzu co to była za sytuacja, postaram się naprawić!
-
----
-
-*(For English speakers: mod is fully bilingual, press F2 in-game to switch to English interface)*
+Jeśli mod każe Ci zagrać złą kartę albo widzisz coś dziwnego – napisz w komentarzu co to była za sytuacja, postaram się naprawić!
 
 ---
 
 ## Wskazówki do posta:
 - Dodaj screenshoty HUDu w walce i overlay decku
-- Wrzuć na r/SlayTheSpire lub r/SlayTheSpire2
-- Możesz też użyć Nexus Mods jeśli tam jest społeczność STS2
+- Wrzuć na r/slaythespire
